@@ -1,34 +1,34 @@
-# Ejercicio práctico
+# Practice exercise
 import random
 
 intentosRealizados = 0
 
-print('¡Hola! ¿Cómo te llamas?')
+print('¡Hi! Insert your name, please.')
 miNombre = input()
 
 número = random.randint(1, 10)
-print('Bien, ' + miNombre + ', estoy pensando en un número entre 1 y 10.')
+print('Nice, ' + miNombre + ', I am thinking of a number between 1 and 10.')
 
 while intentosRealizados < 6:
-    print('Intenta adivinar.')
+    print('Try to guess.')
     estimación = input()
     estimación = int(estimación)
 
     intentosRealizados = intentosRealizados + 1
 
     if estimación < número:
-        print('Tu estimación es muy baja.')
+        print('Your estimate is too low.')
     
     if estimación > número:
-        print('Tu estimación es muy alta.')
+        print('Your estimate is very high.')
     
     if estimación == número:
         break
 
 if estimación == número:
     intentosRealizados = str(intentosRealizados)
-    print('¡Buen trabajo, ' + miNombre + '! ¡Has acertado mi número en ' + intentosRealizados + ' intentos!')
+    print('¡Good job, ' + miNombre + '! ¡You guessed my number in ' + intentosRealizados + ' tries!')
 
 if estimación != número:
     número = str(número)
-    print('Pues no. El número en el que estaba pensando era el ' + número + '.')
+    print('Incorrect. The number I was thinking of was ' + número)
