@@ -6,29 +6,30 @@ intentosRealizados = 0
 print('¡Hi! Insert your name, please.')
 miNombre = input()
 
-número = random.randint(1, 10)
+numero = random.randint(1, 10)
 print('Nice, ' + miNombre + ', I am thinking of a number between 1 and 10.')
 
 while intentosRealizados < 6:
     print('Try to guess.')
-    estimación = input()
-    estimación = int(estimación)
+    estimacion = input()
+    estimacion = int(estimacion)
 
     intentosRealizados = intentosRealizados + 1
 
-    if estimación < número:
+    if estimacion < numero:
         print('Your estimate is too low.')
     
-    if estimación > número:
+    if estimacion > numero:
         print('Your estimate is very high.')
     
-    if estimación == número:
+    if estimacion == numero:
         break
 
-if estimación == número:
+if estimacion == numero:
     intentosRealizados = str(intentosRealizados)
     print('¡Good job, ' + miNombre + '! ¡You guessed my number in ' + intentosRealizados + ' tries!')
 
-if estimación != número:
-    número = str(número)
-    print('Incorrect. The number I was thinking of was ' + número)
+if estimacion != numero:
+    numero = str(numero)
+    print('Incorrect. The number I was thinking of was ' + numero)
+    
