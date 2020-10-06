@@ -14,7 +14,7 @@ while intentosRealizados < 6:
     estimacion = input()
     estimacion = int(estimacion)
 
-    intentosRealizados = intentosRealizados + 1
+    intentosRealizados+=1
 
     if estimacion < numero:
         print('Tu estimación es muy baja.')
