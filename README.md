@@ -1,2 +1,2 @@
 # adivinador
-Este es un proyecto de prueba para aprender a usar Git y Github
+Este es un proyecto de prueba para aprender conceptos básicos de Git y Github
